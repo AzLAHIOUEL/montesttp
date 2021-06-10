@@ -175,7 +175,7 @@ public void propertyChange(PropertyChangeEvent evt) {
 
 @Override
 public void keyPressed(KeyEvent e) {
-   System.out.println("x");
+   
    Action action = (Action) Lookup.getInstance().getService(Action.class);
    if(e.getKeyCode()== KeyEvent.VK_RIGHT)
   action.moveRight();
