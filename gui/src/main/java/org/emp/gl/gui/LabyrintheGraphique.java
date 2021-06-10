@@ -40,19 +40,17 @@ implements RobotPositionChangeListner,KeyListener
 
    /** Le labyrinthe. */
    private boolean[][] labyrinthe = {
-         {false, false, false, false, false, false, false, false, false, false, false, false},
-         {false, true, true, true, false, true, true, true, true, true, true, false},
-         {true, true, false, true, false, true, false, false, false, false, true, false},
-         {false, false, false, true, false, true, true, true, true, false, true, false},
-         {false, true, true, true, true, false, false, false, true, false, true, true},
-         {false, false, false, false, true, false, true, false, true, false, true, false},
-         {false, true, true, false, true, false, true, false, true, false, true, false},
-         {false, false, true, false, true, false, true, false, true, false, true, false},
-         {false, true, true, true, true, true, true, true, true, false, true, false},
-         {false, false, false, false, false, false, true, false, false, false, true, false},
-         {false, true, true, true, true, true, true, false, true, true, true, false},
-         {false, false, false, false, false, false, false, false, false, false, false, false}};
-
+      {false, false, false, false, false, false, false, false, false, false},
+      {false, true, true, true, false, true, false, true, false, true },
+      {false, true, true, true, false, true, false, true, true, true},
+      {false, true, false, false, false, true, false, true, false, false},
+      {false, true, true, true, true, true, false, true, false, false},
+      {true, true, true, true, false, false, false, true, false, false},
+      {false, true, true, true, true, true, true, true, false, false},
+      {false, true, false, false, false, false, false, false, false, false},
+      {false, true, true, true, true, true, true, true, true, false},
+      {false, false, false, false, false, false, false, false, false, false},
+  };
 /*
 private boolean[][] labyrinthe = {
    {true, true, true, true, true, true, true, true, true, true, true, true},
@@ -72,7 +70,7 @@ private boolean[][] labyrinthe = {
    private int x=0;
 
    /** Position courante en y dans le labyrinthe. */
-   private int y=2;
+   private int y=5;
 
    /** Position de départ en x dans le labyrinthe. */
    private final int xd = 0;

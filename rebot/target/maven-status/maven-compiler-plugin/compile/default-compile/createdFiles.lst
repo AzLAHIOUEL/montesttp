@@ -1,2 +1,8 @@
 org/emp/gl/rebot/TimerChangeListner.class
+org/emp/gl/rebot/Robot.class
+org/emp/gl/rebotState/StayingFixState.class
+org/emp/gl/rebotState/MovingLeftState.class
 org/emp/gl/robotPositionChangeListner/RobotPositionChangeListner.class
+org/emp/gl/rebotState/MovingUpState.class
+org/emp/gl/rebotState/RobotState.class
+org/emp/gl/rebotState/MovingRightState.class

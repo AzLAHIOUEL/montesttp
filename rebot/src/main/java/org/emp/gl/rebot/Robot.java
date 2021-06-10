@@ -14,28 +14,27 @@ import java.awt.*;
 
 public class Robot  implements Action ,TimerChangeListner{
     private boolean[][] labyrinthe = {
-        {false, false, false, false, false, false, false, false, false, false, false, false},
-        {false, true, true, true, false, true, true, true, true, true, true, false},
-        {true, true, false, true, false, true, false, false, false, false, true, false},
-        {false, false, false, true, false, true, true, true, true, false, true, false},
-        {false, true, true, true, true, false, false, false, true, false, true, true},
-        {false, false, false, false, true, false, true, false, true, false, true, false},
-        {false, true, true, false, true, false, true, false, true, false, true, false},
-        {false, false, true, false, true, false, true, false, true, false, true, false},
-        {false, true, true, true, true, true, true, true, true, false, true, false},
-        {false, false, false, false, false, false, true, false, false, false, true, false},
-        {false, true, true, true, true, true, true, false, true, true, true, false},
-        {false, false, false, false, false, false, false, false, false, false, false, false}};
+        {false, false, false, false, false, false, false, false, false, false},
+        {false, true, true, true, false, true, false, true, false, true },
+        {false, true, true, true, false, true, false, true, true, true},
+        {false, true, false, false, false, true, false, true, false, false},
+        {false, true, true, true, true, true, false, true, false, false},
+        {true, true, true, true, false, false, false, true, false, false},
+        {false, true, true, true, true, true, true, true, false, false},
+        {false, true, false, false, false, false, false, false, false, false},
+        {false, true, true, true, true, true, true, true, true, false},
+        {false, false, false, false, false, false, false, false, false, false},
+    };
     RobotState currentState;
     PropertyChangeSupport pcs = new PropertyChangeSupport(this);
-    public Integer x=2,y=0;
+    public Integer x=5,y=0;
     public int orientation=2;
     public Robot(){
         this.currentState=new MovingRightState(this);
        
     }
     public void setState(RobotState currentState){
-        
+        System.out.println(currentState.getClass());
         this.currentState=currentState;
     }
 
@@ -77,7 +76,7 @@ public class Robot  implements Action ,TimerChangeListner{
         if(orientation==2&&y<9&&this.labyrinthe[x][y+1]){y++;}
         
         Point newp = new Point(x,y);
-        System.out.println(newp);
+        System.out.println(newp+" "+orientation);
         pcs.firePropertyChange("rebot move", null, newp);
         
     }

@@ -18,7 +18,7 @@ public class MovingRightState extends RobotState {
     @Override
     public void goDown(){
         this.robot.orientation=3;
-        this.robot.setState(new MovingDownState(robot));
+       this.robot.setState(new MovingDownState(robot));
     }
     
     

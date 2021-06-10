@@ -35,7 +35,7 @@ public class StayingFixState extends RobotState{
     @Override
     public void goDown(){
         if(oldstate!=3)
-        this.robot.setState(new MovingDownState(robot));
+       // this.robot.setState(new MovingDownState(robot));
         System.out.println("down");
     }
     

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.emp.gl.lookup.AppTest" time="0.021" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.emp.gl.timer.service.AppTest" time="0.021" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="gnome"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -7,7 +7,7 @@
     <property name="java.specification.version" value="1.8"/>
     <property name="sun.cpu.isalist" value=""/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/home/fartas/Desktop/testtpgl2021/game/lookup/target/test-classes:/home/fartas/Desktop/testtpgl2021/game/lookup/target/classes:/home/fartas/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/fartas/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="java.class.path" value="/home/fartas/Desktop/testtpgl2021/game/timer-service/target/test-classes:/home/fartas/Desktop/testtpgl2021/game/timer-service/target/classes:/home/fartas/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/fartas/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="java.vm.vendor" value="Private Build"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
@@ -17,20 +17,20 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
-    <property name="sun.java.command" value="/home/fartas/Desktop/testtpgl2021/game/lookup/target/surefire/surefirebooter7706672288173476164.jar /home/fartas/Desktop/testtpgl2021/game/lookup/target/surefire 2021-06-11T00-21-53_184-jvmRun1 surefire5925234851375356362tmp surefire_26022883342187158212tmp"/>
-    <property name="surefire.test.class.path" value="/home/fartas/Desktop/testtpgl2021/game/lookup/target/test-classes:/home/fartas/Desktop/testtpgl2021/game/lookup/target/classes:/home/fartas/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/fartas/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="sun.java.command" value="/home/fartas/Desktop/testtpgl2021/game/timer-service/target/surefire/surefirebooter9139705702597743001.jar /home/fartas/Desktop/testtpgl2021/game/timer-service/target/surefire 2021-06-11T00-21-53_184-jvmRun1 surefire1618368689093125378tmp surefire_03221676669283927036tmp"/>
+    <property name="surefire.test.class.path" value="/home/fartas/Desktop/testtpgl2021/game/timer-service/target/test-classes:/home/fartas/Desktop/testtpgl2021/game/timer-service/target/classes:/home/fartas/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/fartas/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/fartas"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
-    <property name="basedir" value="/home/fartas/Desktop/testtpgl2021/game/lookup"/>
+    <property name="basedir" value="/home/fartas/Desktop/testtpgl2021/game/timer-service"/>
     <property name="file.separator" value="/"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/fartas/Desktop/testtpgl2021/game/lookup/target/surefire/surefirebooter7706672288173476164.jar"/>
+    <property name="surefire.real.class.path" value="/home/fartas/Desktop/testtpgl2021/game/timer-service/target/surefire/surefirebooter9139705702597743001.jar"/>
     <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="1.8.0_292-8u292-b10-0ubuntu1~20.04-b10"/>
@@ -45,7 +45,7 @@
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="java.io.tmpdir" value="/tmp"/>
     <property name="java.version" value="1.8.0_292"/>
-    <property name="user.dir" value="/home/fartas/Desktop/testtpgl2021/game/lookup"/>
+    <property name="user.dir" value="/home/fartas/Desktop/testtpgl2021/game/timer-service"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
@@ -58,5 +58,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="org.emp.gl.lookup.AppTest" time="0"/>
+  <testcase name="shouldAnswerWithTrue" classname="org.emp.gl.timer.service.AppTest" time="0.001"/>
 </testsuite>

@@ -3,34 +3,24 @@ package org.emp.gl.rebotState;
 import org.emp.gl.rebot.Robot;
 
 public class MovingDownState extends RobotState{
-    
+
     public MovingDownState(Robot robot) {
         super(robot);
+        //TODO Auto-generated constructor stub
     }
-    
-    
     @Override
     public void goLeft(){
+        this.robot.orientation=4;
+        System.out.println(this.robot.orientation);
         this.robot.setState(new MovingLeftState(robot));
     }
     
+
     @Override
     public void goRight(){
-        this.robot.setState(new MovingRightState(robot));
+        this.robot.orientation=2;
+        System.out.println(this.robot.orientation);
+       this.robot.setState(new MovingRightState(robot));
     }
-    
-    
-    @Override
-    public void stayFix(){
-        this.robot.setState(new StayingFixState(robot,3));
-    }
-    @Override
-    public void move(){
-        robot.y=robot.y+1;
-        
-    }
-    
-    
-    
-    
+
 }
